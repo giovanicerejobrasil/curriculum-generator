@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /curriculum-generator/public/
+
+# Redireciona todas as requisições para index.php, exceto arquivos ou pastas existentes.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

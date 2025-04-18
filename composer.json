@@ -1,0 +1,26 @@
+{
+  "name": "giovani-brasil/curriculum-generator",
+  "description": "Projeto que gera currículos de forma dinâmica para o usuário.",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "twbs/bootstrap": "5.3.5",
+    "dompdf/dompdf": "^3.1"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@database",
+      "@curriculums"
+    ],
+    "database": [
+      "mkdir -p database",
+      "touch database/database.db"
+    ],
+    "curriculums": [
+      "mkdir -p public/files/curriculums"
+    ]
+  }
+}
