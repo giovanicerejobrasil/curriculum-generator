@@ -8,6 +8,7 @@ class AuthorController extends Controller
 {
   public function index()
   {
-    return $this->loadView("author");
+    $data['title'] =  PROJECT_NAME . " - Autor";
+    return $this->loadView("author", $data);
   }
 }
