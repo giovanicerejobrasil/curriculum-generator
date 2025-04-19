@@ -1,10 +1,10 @@
 # Curriculum Generator
 
-This project was created to generate a custom curriculum information for a specifc job vacancy for you used the perfect keywords and experiences for the vacancy. Of course, this project is not a magic, but it can help you to generate a curriculum with a good quality. Enjoy it!
+This project was created to generate custom curriculum information for a specific job position for you to use the perfect keywords and experiences for it. Of course, this project is not magic, but it can help you to generate a curriculum of good quality. Enjoy it!
 
 ## Observations
 
-This project initially just generete a curriculum in brazilian portuguese. But, in the future, I will add more languages, and you can selected the language you want to use.
+This project initially just generates curriculum in Brazilian Portuguese. But, eventually, I will add more languages, and you will be able to select the language you want to use.
 
 ## Stacks
 
