@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\AuthorController;
 use App\Core\Router;
 use App\Controllers\AdditionalController;
 use App\Controllers\CourseCertificationController;
@@ -32,7 +33,7 @@ $router->add('/generate', function () {
 });
 
 $router->add('/author', function () {
-    $controller = new HomeController();
+    $controller = new AuthorController();
     $controller->index();
 });
 
