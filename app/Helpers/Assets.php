@@ -24,6 +24,7 @@ class Assets
         if ($version !== null) {
             $url .= "?v=" . $version;
         }
+
         return '<link rel="stylesheet" href="' . $url . '">';
     }
 
@@ -53,11 +54,22 @@ class Assets
      */
     public static function db(string $file, ?string $version = null): string
     {
-        $url = __DIR__ . "/../../database/{$file}.db";
+        $url = self::asset("/database/{$file}.db");
 
         if ($version !== null) {
             $url .= "?v=" . $version;
         }
+        return $url;
+    }
+
+    public static function img(string $file, ?string $version = null): string
+    {
+        $url = self::asset("/public/assets/img/{$file}");
+
+        if ($version !== null) {
+            $url .= "?v=" . $version;
+        }
+
         return $url;
     }
 }
